@@ -30,10 +30,10 @@ function getTargetTotal(){
 function findTarget(numberArray, target){
 	for(let i = 0; i < numberArray.length; i++){
 		for(let j = 0; j < numberArray.length; j++){
-			if(target === (numberArray[i] + numberArray[j])){
-				console.log("["+i+"]["+j+"]");
-				console.log("-------------------------");
+			let arrayTotal = (parseInt(numberArray[i]) + parseInt(numberArray[j]));
+			if(parseInt(target) === arrayTotal){
 				console.log("["+numberArray[j]+"]["+numberArray[i]+"]");
+				break;
 			}
 			else{
 				console.log("No Match!");
